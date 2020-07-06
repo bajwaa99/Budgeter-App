@@ -1,0 +1,30 @@
+package com.example.budgeterapp
+
+import java.io.Serializable
+
+class ExpenseData(_id:String?,tit:String?,amo:Int?,desc:String?,date_n:String?,sta:String?,_key:String?):Serializable
+{
+    var title:String? = null
+    var amoount: Int? = null
+    var description:String? =null
+    var date:String?=null
+    var status:String?=null
+    var key:String?=null
+    var id:String?=null
+
+    init {
+
+        this.title=tit
+        this.amoount=amo
+        this.description=desc
+        this.date=date_n
+        this.status=sta
+        this.key=_key
+        this.id=_id
+    }
+
+    constructor():this("","",0,"","","","")
+    {
+
+    }
+}

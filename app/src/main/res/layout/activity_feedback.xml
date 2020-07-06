@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout_feedback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FeedbackActivity"
+    android:fitsSystemWindows="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:id="@+id/feedback_img"
+            android:layout_width="143dp"
+            android:layout_height="119dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/ic_logo"
+            android:contentDescription="@string/todo" />
+
+        <RatingBar
+            android:id="@+id/feedback_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:layout_below="@id/feedback_img"
+            android:numStars="5" />
+
+        <EditText
+            android:id="@+id/feedback_edtbox"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/feedback_rating"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/enter_your_feedback"
+            android:textAlignment="center"
+            android:background="@drawable/custom_edittext"
+            android:padding="5dp"
+            android:autofillHints=""
+            android:inputType="textPhonetic" />
+
+        <Button
+            android:id="@+id/feedback_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@id/feedback_edtbox"
+            android:background="@drawable/custom_button"
+            android:layout_centerHorizontal="true"
+            android:text="@string/submit"
+            android:textColor="@android:color/black"
+            android:padding="@dimen/activity_horizontal_margin"/>
+
+    </RelativeLayout>
+
+    <include
+    layout="@layout/app_bar_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+    <com.google.android.material.navigation.NavigationView
+    android:id="@+id/nav_view_feedback"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:fitsSystemWindows="true"
+    app:headerLayout="@layout/nav_header_main"
+    app:menu="@menu/activity_main_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".AddLoanActivity">
+
+    <Spinner
+        android:layout_marginTop="80dp"
+        android:id="@+id/addLoan_spinner"
+        android:layout_width="200dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="100dp"
+        android:layout_height="30dp"
+        android:background="@drawable/custom_edittext"
+        android:padding="5dp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/addLoan_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/addLoan_spinner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+
+        />
+
+    <EditText
+        android:id="@+id/addLoan_title"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/addLoan_text1"
+        app:layout_constraintTop_toTopOf="@id/addLoan_text1"
+        android:layout_marginStart="60dp"
+        android:background="@drawable/custom_edittext"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:autofillHints=""
+        android:inputType="textPhonetic"
+        tools:ignore="LabelFor" />
+
+
+    <TextView
+        android:id="@+id/addLoan_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/addLoan_text1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/amount"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+
+        />
+
+    <EditText
+        android:id="@+id/addLoan_amount"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/addLoan_text1"
+        app:layout_constraintTop_toBottomOf="@id/addLoan_text1"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="60dp"
+        android:background="@drawable/custom_edittext"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:autofillHints=""
+        android:inputType="number"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/addLoan_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/addLoan_text2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/description"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+
+        />
+    <EditText
+        android:id="@+id/addLoan_desc"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:textSize="20sp"
+        android:background="@drawable/custom_edittext"
+        android:padding="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addLoan_text3"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:inputType="textPhonetic"
+        tools:ignore="LabelFor" />
+    <TextView
+        android:id="@+id/addLoan_text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/addLoan_desc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/date"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+
+        />
+
+    <EditText
+        android:id="@+id/addLoan_date"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/addLoan_text1"
+        app:layout_constraintTop_toBottomOf="@id/addLoan_desc"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="60dp"
+        android:inputType="date"
+        android:textAlignment="center"
+        android:hint="@string/yyyy_mm_dd"
+        android:background="@drawable/custom_edittext"
+        android:padding="5dp"
+        android:autofillHints="" />
+
+    <ImageButton
+        android:id="@+id/addLoan_datepick"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_date_range"
+        app:layout_constraintLeft_toRightOf="@id/addLoan_date"
+        app:layout_constraintTop_toBottomOf="@id/addLoan_desc"
+        android:contentDescription="@string/edit" />
+
+    <TextView
+        android:id="@+id/addLoan_text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/addLoan_date"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/status"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+
+        />
+    <Spinner
+        android:id="@+id/addLoan_spinner1"
+        android:layout_width="140dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/addLoan_text4"
+        app:layout_constraintLeft_toRightOf="@id/addLoan_text1"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="60dp"
+        android:layout_height="30dp"
+        android:background="@drawable/custom_edittext"
+        android:padding="5dp"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/addLoan_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="70dp"
+        android:background="@drawable/custom_whitebutton"
+        android:textColor="#E91E63"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="@string/save_as_draft"
+        android:layout_marginBottom="30dp"
+        />
+
+    <Button
+        android:id="@+id/addLoan_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/custom_button"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="@string/add"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addLoan_save" />
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    >
+    <TextView
+        android:id="@+id/expense_title"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="40dp"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+
+        />
+    <TextView
+        android:id="@+id/expense_amount"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@id/expense_title"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="30dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/Pink"
+
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

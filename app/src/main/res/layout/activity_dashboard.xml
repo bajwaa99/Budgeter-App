@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DashboardActivity"
+    android:background="@drawable/gradient_background"
+    android:fitsSystemWindows="true">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:id="@+id/dashboard_previousMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/dashboard_thisMonth"
+                android:layout_toStartOf="@id/dashboard_thisMonth"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:background="@drawable/custom_whitebutton"
+                android:textColor="#E91E63"
+                android:text="March" />
+
+            <Button
+
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/dashboard_thisMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:background="@drawable/custom_whitebutton"
+                android:textColor="#E91E63"
+                android:text="April"
+                />
+
+            <Button
+                android:id="@+id/dashboard_nextMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/dashboard_thisMonth"
+                android:layout_toEndOf="@id/dashboard_thisMonth"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:background="@drawable/custom_whitebutton"
+                android:textColor="#E91E63"
+                android:text="May" />
+
+            <View
+                android:id="@+id/dashboard_divider"
+                android:layout_width="350dp"
+                android:layout_height="3dp"
+                android:layout_marginStart="25dp"
+                android:background="@android:color/black"
+                android:visibility="visible"
+                android:layout_below="@id/dashboard_thisMonth"
+                tools:visibility="visible"
+                android:layout_marginTop="30dp"
+                />
+
+            <ImageView
+                android:layout_below="@id/dashboard_divider"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="50dp"
+                android:src="@drawable/expenses"
+                android:id="@+id/dashboard_image1"
+                android:contentDescription="@string/todo" />
+            <TextView
+                android:layout_below="@id/dashboard_divider"
+                android:layout_toEndOf="@id/dashboard_image1"
+                android:textSize="25sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:id="@+id/dashboard_textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/net_balance" />
+
+            <TextView
+                android:layout_below="@id/dashboard_textView2"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"
+                android:id="@+id/dashboard_netBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <View
+                android:id="@+id/dashboard_divider2"
+                android:layout_width="350dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="25dp"
+                android:background="@android:color/black"
+                android:visibility="visible"
+                android:layout_below="@id/dashboard_netBalance"
+                tools:visibility="visible"
+                />
+            <ImageView
+                android:layout_below="@id/dashboard_divider2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="50dp"
+                android:src="@drawable/gain"
+                android:id="@+id/dashboard_image2"
+                android:contentDescription="@string/todo" />
+            <TextView
+
+                android:layout_below="@id/dashboard_divider2"
+                android:layout_toEndOf="@id/dashboard_image2"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="5dp"
+                android:textColor="@android:color/black"
+                android:id="@+id/dashboard_textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_income"
+
+                />
+            <TextView
+
+                android:layout_below="@id/dashboard_textView3"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"
+                android:id="@+id/dashboard_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <ImageView
+                android:layout_alignTop="@id/dashboard_textView4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="50dp"
+                android:src="@drawable/spend"
+                android:id="@+id/dashboard_image3"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:layout_below="@id/dashboard_divider3"
+                android:layout_toEndOf="@id/dashboard_image3"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@android:color/black"
+                android:id="@+id/dashboard_textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_expense" />
+
+            <TextView
+                android:layout_below="@id/dashboard_textView4"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"
+                android:id="@+id/dashboard_expense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+
+            <View
+            android:id="@+id/dashboard_divider3"
+            android:layout_width="350dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="25dp"
+            android:background="@android:color/black"
+            android:visibility="visible"
+            android:layout_below="@id/dashboard_income"
+            tools:visibility="visible"
+            />
+
+            <View
+                android:id="@+id/dashboard_divider4"
+                android:layout_width="350dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="25dp"
+                android:background="@android:color/black"
+                android:visibility="visible"
+                android:layout_below="@id/dashboard_expense"
+                tools:visibility="visible" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="90dp"
+            android:background="#FCFBFB"
+            android:layout_marginEnd="30dp"
+            app:srcCompat="@drawable/add"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="150dp"
+            android:background="#FCFBFB"
+            app:srcCompat="@drawable/loans"
+            android:layout_marginEnd="30dp"
+            android:visibility="invisible"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="210dp"
+            android:layout_marginEnd="30dp"
+            android:background="#FCFBFB"
+            app:srcCompat="@drawable/expenses"
+            android:visibility="invisible"
+            />
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FCFBFB"
+            android:id="@+id/dashboard_bottomBar"
+            app:menu="@menu/bottom_bar"
+            android:layout_gravity="bottom"
+            />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

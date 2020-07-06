@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="drafts">Drafts</string>
+    <string name="tips_and_suggestions">Tips and Suggestions</string>
+    <string name="feedback">Feedback</string>
+    <string name="settings">Settings</string>
+    <string name="calendar">Calendar</string>
+    <string name="loans">Loans</string>
+    <string name="expenses">Expenses</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="keep_your_budget_recorded_with_us">Keep your budget recorded with us!</string>
+    <string name="login">login</string>
+    <string name="register_new_account">Register new account</string>
+    <string name="passwordHint">**********</string>
+    <string name="password">Password</string>
+    <string name="EmailHint">abc@email.com</string>
+    <string name="email">Email</string>
+    <string name="already_have_an_account_login">Already have an account? LogIn</string>
+    <string name="register">Register</string>
+    <string name="yyyy_mm_dd">yyyy-mm-dd</string>
+    <string name="birth_date">Birth Date</string>
+    <string name="_92_xxx_xxxxxxx">+92-xxx-xxxxxxx</string>
+    <string name="phone">Phone</string>
+    <string name="firstname_lastname">FirstName LastName</string>
+    <string name="name">Name</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="save">Save</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="all_expenses">All Expenses</string>
+    <string name="all_loans">All Loans</string>
+    <string name="add_loan">Add Loan</string>
+    <string name="Other">Other</string>
+    <string name="submit">Submit</string>
+    <string name="enter_your_feedback">Enter your feedback</string>
+    <string name="edit">Edit</string>
+    <string name="total_income">Total Income</string>
+    <string name="total_expenses">Total Expenses</string>
+    <string name="balance">Balance</string>
+    <string name="rs_200000">Rs: 200000</string>
+    <string name="rs_400000">Rs: 400000</string>
+    <string name="pending">Pending</string>
+    <string name="ammar_s_loan">Ammar`s Loan</string>
+    <string name="maid">Maid</string>
+    <string name="title">Title</string>
+    <string name="amount">Amount</string>
+    <string name="description">Description</string>
+    <string name="date">Date</string>
+    <string name="status">Status</string>
+    <string name="save_as_draft">Save as draft</string>
+    <string name="add">Add</string>
+    <string name="salary">Salary</string>
+    <string name="other_income">Other Income</string>
+    <string name="update">Update</string>
+    <string name="title_activity_expenses">Expenses</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="title_activity_loans">Loans</string>
+    <string name="upload">Upload</string>
+    <string name="choose">Choose</string>
+    <string name="edit_income">Edit Income</string>
+    <string name="search">Search</string>
+    <string name="net_balance">Net Balance</string>
+    <string name="todo">TODO</string>
+    <string name="total_expense">Total Expense</string>
+    <string name="no_account_yet_register_now">No Account yet? Register Now</string>
+    <string name="font_style">Font Style</string>
+    <string name="text">text</string>
+    <string name="font_color">Font Color</string>
+    <string name="reset_all_data">Reset all Data</string>
+</resources>

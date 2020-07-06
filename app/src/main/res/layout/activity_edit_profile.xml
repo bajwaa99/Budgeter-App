@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".EditProfileActivity">
+
+    <TextView
+        android:id="@+id/edit_profile_Heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/edit_profile"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:id="@+id/edit_profile_img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edit_profile_Heading"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/edit_profile_text0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_profile_img"
+        android:text="@string/name"
+        android:layout_alignStart="@id/edit_profile_email"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/edit_profile_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_profile_text0"
+        android:background="@drawable/custom_edittext"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:hint="@string/name"
+        android:autofillHints=""
+        android:inputType="text" />
+
+    <TextView
+        android:paddingTop="15dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/edit_profile_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_profile_text0"
+        android:text="@string/email"
+        android:layout_alignStart="@id/edit_profile_email"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/edit_profile_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_profile_text1"
+        android:background="@drawable/custom_edittext"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:hint="@string/EmailHint"
+        android:autofillHints=""
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:layout_alignStart="@id/edit_profile_email"
+        android:id="@+id/edit_profile_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_profile_email"
+        android:text="@string/password"
+        android:paddingTop="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:layout_alignStart="@id/edit_profile_email"
+        android:id="@+id/edit_profile_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_profile_text2"
+        android:background="@drawable/custom_edittext"
+        android:padding="5dp"
+        android:hint="@string/passwordHint"
+        android:autofillHints=""
+        android:inputType="textPassword" />
+
+    <TextView
+        android:layout_alignStart="@id/edit_profile_email"
+        android:id="@+id/edit_profile_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_profile_password"
+        android:text="@string/phone"
+        android:paddingTop="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_alignStart="@id/edit_profile_email"
+        android:id="@+id/edit_profile_phone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_profile_text3"
+        android:background="@drawable/custom_edittext"
+        android:padding="5dp"
+        android:text="@string/phone"
+        android:hint="@string/_92_xxx_xxxxxxx"/>
+
+    <TextView
+        android:layout_alignStart="@id/edit_profile_email"
+        android:id="@+id/edit_profile_text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_profile_phone"
+        android:text="@string/birth_date"
+        android:paddingTop="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:layout_alignStart="@id/edit_profile_email"
+        android:id="@+id/edit_profile_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_profile_text4"
+        android:background="@drawable/custom_edittext"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:hint="@string/yyyy_mm_dd"
+        android:autofillHints=""
+        android:inputType="date" />
+
+    <ImageView
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:id="@+id/date_edit"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/edit_profile_text4"
+        android:layout_toEndOf="@id/edit_profile_birthday"
+        android:layout_alignTop="@id/edit_profile_birthday"
+        android:src="@drawable/ic_date_range"
+        android:contentDescription="@string/todo" />
+
+    <Button
+        android:id="@+id/save_EditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/edit_profile_birthday"
+        android:background="@drawable/custom_button"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="@string/save"
+        />
+
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/edit_profile_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/edit_profile_img"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/custom_button"
+        android:textColor="@android:color/black"
+        android:layout_toEndOf="@id/edit_profile_img"
+        android:text="@string/upload" />
+
+    <Button
+        android:id="@+id/edit_profile_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/edit_profile_upload"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/custom_whitebutton"
+        android:textColor="#E91E63"
+        android:layout_toEndOf="@id/edit_profile_img"
+        android:text="@string/choose" />
+
+</RelativeLayout>

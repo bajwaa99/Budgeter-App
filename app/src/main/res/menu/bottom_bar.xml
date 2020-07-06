@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+
+    <item
+        android:id="@+id/bottom_profile"
+        android:title="@string/profile"
+        android:icon="@drawable/profile"
+        app:showAsAction="ifRoom"
+
+        />
+
+    <item
+        android:id="@+id/bottom_expenses"
+        android:title="@string/expenses"
+        android:icon="@drawable/expenses"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/bottom_loans"
+        android:title="@string/loans"
+        android:icon="@drawable/loans"
+        app:showAsAction="ifRoom"
+        />
+</menu>
