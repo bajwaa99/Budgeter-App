@@ -1,5 +1,5 @@
 # Budgeter-App
-Using Firebase and Kotlin
+Using Firebase and Kotlin in Android Studio
 
 **Problem:**
 
