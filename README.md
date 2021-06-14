@@ -12,20 +12,37 @@ This budgeting application will allow you to create a spending plan for your mon
 **Feature Modules:**
 
 •	Sign Up
+
 •	Log In
+
 •	Enter Pin code
+
 •	Change Passkey
+
 •	List of loans
+
 •	Add loans
+
 •	Settings
+
 •	Tools
+
 •	Feedback
+
 •	Calculator
+
 •	Tips and Suggestions
+
 •	User Profile
+
 •	Dashboard
+
 •	Menu
+
 •	Add Expenses
+
 •	List of Expenses
+
 •	Drafts
+
 •	Calender
